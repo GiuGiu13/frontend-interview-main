@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('head.ejs') %>
+    </head>
+  <body>
+    <%- include('navbar.ejs') %>
+    
+    <div class='container'>
+
+      <div class="jumbotron">
+        <h1 class="display-4">Cat Pictures!</h1>
+        <p class="lead">See random images of cats</p>
+        <hr class="my-4">
+        <p><i>Powered by TryHackMe</i></p>
+      </div>
+
+      <div id='cat-images'><i>Loading..</i></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cats.js" ></script>
+
+    <script>
+      renderCats('#cat-images')
+    </script>
+
+  </body>
+</html>
