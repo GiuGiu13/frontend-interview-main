@@ -1,6 +1,6 @@
 import React from 'react';
 import Data from './data/content.json';
-import Navbar from './views/navbar'; 
+import Header from './views/header'; 
 import Footer from './views/footer'; 
 
 function Head() {
@@ -23,7 +23,7 @@ const catsPage = () => {
             <Head />
  
             <div className={['catsPage__container']}>
-              <Navbar />
+              <Header />
               {/* <div className={'catsPage__main'}>
                 <div className={'row catsPage__main-row'}>
                   <div className={'col-12 col-lg-4 catsPage__left'}>
