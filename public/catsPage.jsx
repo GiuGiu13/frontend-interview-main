@@ -24,7 +24,7 @@ const catsPage = () => {
  
             <div className={['catsPage__container']}>
               <Header />
-              {/* <div className={'catsPage__main'}>
+              <div className={'catsPage__main'}>
                 <div className={'row catsPage__main-row'}>
                   <div className={'col-12 col-lg-4 catsPage__left'}>
                       <h2 className={'catsPage__left-title'}>{Data.courses[0].title}</h2>
@@ -42,7 +42,7 @@ const catsPage = () => {
                       </div>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <Footer />
             </div>
         </>
