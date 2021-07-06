@@ -8,7 +8,7 @@ module.exports = function(app, csrfProtection, io) {
     })
 
     app.get('/cats',async function (req, res) {
-        res.render('cats.ejs', {
+        res.render('catsPage.jsx', {
             title: 'Cat Pictures!'
         })
     })

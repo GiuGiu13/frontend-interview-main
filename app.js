@@ -6,7 +6,8 @@ let app = express()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'public'))
-app.set('view engine', 'ejs')
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine());
 
 app.use(logger('dev'))
 app.use(express.json())
